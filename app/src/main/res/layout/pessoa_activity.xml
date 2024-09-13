@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/nome_pessoa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Luan Muruk"
+        android:layout_marginStart="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/idade_pessoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="idade"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/nome_pessoa"
+        android:layout_marginStart="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/profissao_pessoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="programador"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/idade_pessoa"
+        android:layout_marginStart="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/altura_pessoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="1.83"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/profissao_pessoa"
+        android:layout_marginStart="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
