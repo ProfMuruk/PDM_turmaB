@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/nomePessoa"
+        android:id="@+id/nome_pessoa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="Luan Muruk"
@@ -14,5 +14,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/idade_pessoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="idade"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/nome_pessoa"
+        android:layout_marginStart="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/profissao_pessoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="programador"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/idade_pessoa"
+        android:layout_marginStart="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
