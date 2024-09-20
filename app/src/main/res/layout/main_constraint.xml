@@ -15,7 +15,4 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/pessoa_activity"
         />
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

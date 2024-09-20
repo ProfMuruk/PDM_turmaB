@@ -3,7 +3,9 @@ package com.example.aula05
 import android.app.Activity
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.aula05.model.Pessoa
 import org.w3c.dom.Text
@@ -28,5 +30,7 @@ class MainActivity : Activity() {
         recyclerView.adapter = ListarPessoaAdapter( pessoas = listOf(
             Pessoa(nome = "Luan", idade = 34, profissao = "Professor", altura = BigDecimal(1.83))
         ))
+
+        recyclerView.layoutManager = (LinearLayoutManager(this))
     }
 }
