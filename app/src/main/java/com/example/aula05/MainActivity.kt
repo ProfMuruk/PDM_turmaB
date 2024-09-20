@@ -28,6 +28,7 @@ class MainActivity : Activity() {
 
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.adapter = ListarPessoaAdapter( pessoas = listOf(
+            Pessoa(nome = "Luan", idade = 34, profissao = "Professor", altura = BigDecimal(1.83)),
             Pessoa(nome = "Luan", idade = 34, profissao = "Professor", altura = BigDecimal(1.83))
         ))
 
