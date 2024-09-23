@@ -8,5 +8,4 @@ class FormularioPessoaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.formulario_pessoa_activity)
     }
-
 }
