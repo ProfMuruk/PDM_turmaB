@@ -34,7 +34,7 @@ class MainActivity : Activity() {
         val profissao = findViewById<TextView>(R.id.profissao_pessoa)
         profissao.setText("Professor sofrido")*/
 
-        val dao = PessoaDAO();
+        val dao = PessoaDAO(this);
 
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.adapter = ListarPessoaAdapter(

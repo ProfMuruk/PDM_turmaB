@@ -16,6 +16,8 @@ class FormularioPessoaActivity : AppCompatActivity() {
 
         val salvarPessoa = findViewById<Button>(R.id.botao_salvar)
 
+        val dao = PessoaDAO(this)
+
         salvarPessoa.setOnClickListener{
             val inputNome = findViewById<EditText>(R.id.nome_pessoa)
             val nome = inputNome.text.toString()
@@ -41,13 +43,11 @@ class FormularioPessoaActivity : AppCompatActivity() {
                 idade =  idade.toInt(),
                 altura = alturaValidada
             )
-
-            Log.i("Formulario", "O que veio:  $novaPessoa")
-
-            val dao = PessoaDAO()
             dao.adicionar(novaPessoa)
 
+            Log.i("Formulario", "O que veio:  $novaPessoa")
             Log.i("Formulario", "Veio do dao: ${dao.buscarPessoas()}")
+
         }
     }
 }
